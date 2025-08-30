@@ -34,7 +34,7 @@ const LaptopStand3D: React.FC = () => {
   const materialColor = getColorFromSelection(selectedColor)
 
   return (
-    <group ref={meshRef} position={[0, -1.8, 0]} scale={2.2}>
+    <group ref={meshRef} position={[0, -0.8, 0]} scale={1.4}>
       {/* Base of the laptop stand */}
       <RoundedBox
         args={[4, 0.3, 2.5]}

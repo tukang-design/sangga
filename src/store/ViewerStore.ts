@@ -64,7 +64,7 @@ const initialState: ViewerState = {
   
   // Camera and controls
   cameraTarget: new THREE.Vector3(0, 0, 0),
-  cameraPosition: new THREE.Vector3(0, 0, 5),
+  cameraPosition: new THREE.Vector3(0, 0, 6),
   enableOrbitControls: true,
   
   // Animation
@@ -94,7 +94,7 @@ export const useViewerStore = create<ViewerState & ViewerActions>()(
     setCameraTarget: (target: THREE.Vector3) => set({ cameraTarget: target }),
     setCameraPosition: (position: THREE.Vector3) => set({ cameraPosition: position }),
     resetCamera: () => set({ 
-      cameraPosition: new THREE.Vector3(0, 0, 5),
+      cameraPosition: new THREE.Vector3(0, 0, 6),
       cameraTarget: new THREE.Vector3(0, 0, 0)
     }),
     
