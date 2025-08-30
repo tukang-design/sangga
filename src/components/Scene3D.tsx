@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react'
+import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Environment, ContactShadows } from '@react-three/drei'
 import LaptopStand3D from './LaptopStand3D'
@@ -6,15 +6,12 @@ import { useViewerStore } from '../store/ViewerStore'
 
 const Scene3D: React.FC = () => {
   const { cameraPosition, cameraTarget, enableOrbitControls, setRotating } = useViewerStore()
-  const [isHovered, setIsHovered] = useState(false)
 
   const handleMouseEnter = () => {
-    setIsHovered(true)
     setRotating(false) // Pause rotation on hover
   }
 
   const handleMouseLeave = () => {
-    setIsHovered(false)
     setRotating(true) // Resume rotation when not hovering
   }
 
