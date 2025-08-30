@@ -555,68 +555,205 @@ p, span, div,
 /* Responsive Design */
 @media (max-width: 768px) {
   .header {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
   }
   
   .nav-menu {
     display: none;
   }
   
+  /* Hero Section Mobile */
   .hero-section {
+    padding: 60px 0 20px;
+    min-height: auto;
+  }
+  
+  .hero-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 1rem;
-    text-align: center;
+    gap: 30px;
+    padding: 0 1rem;
+  }
+  
+  .hero-right {
+    height: 400px;
+    order: -1; /* Move 3D viewer above text content */
   }
   
   .hero-title {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
   
-  .viewer-section {
-    height: 60vh;
-    min-height: 400px;
+  .hero-subtitle-main {
+    font-size: 1.8rem;
   }
   
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Product Viewer Mobile */
+  .product-viewer {
+    border-radius: 16px;
+    margin: 0 0.5rem;
+  }
+  
+  /* Color Selector Mobile - Repositioned */
   .color-selector {
-    top: 1rem;
-    right: 1rem;
-    padding: 1rem;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 200px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+  }
+  
+  .color-selector h3 {
+    font-size: 12px;
+    margin-bottom: 8px;
   }
   
   .color-options {
-    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    justify-content: center;
   }
   
   .color-option {
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
   }
   
-  .viewer-controls {
-    bottom: 1rem;
-    padding: 0.75rem 1rem;
+  /* CTA Button Mobile */
+  .cta-main {
+    width: 100%;
+    font-size: 1rem;
+    padding: 14px 24px;
   }
   
-  .features-section,
-  .audience-section {
-    padding: 4rem 1rem;
+  /* Social Proof Mobile */
+  .social-proof {
+    margin-top: 1.5rem;
   }
   
-  .features-title,
-  .audience-title {
-    font-size: 2rem;
+  /* Section Padding Optimization */
+  .problem-section,
+  .benefits-section,
+  .testimonials-section,
+  .offer-section,
+  .guarantee-section,
+  .faq-section {
+    padding: 40px 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
   }
 }
 
 @media (max-width: 480px) {
+  /* Extra small mobile optimizations */
   .hero-title {
     font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .hero-subtitle-main {
+    font-size: 1.5rem;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem;
   }
   
   .hero-actions {
     flex-direction: column;
     width: 100%;
+    gap: 0.75rem;
+  }
+  
+  .cta-main {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 12px 20px;
+  }
+  
+  /* 3D Viewer Mobile */
+  .hero-right {
+    height: 300px;
+  }
+  
+  .product-viewer {
+    margin: 0;
+    border-radius: 12px;
+  }
+  
+  /* Color Selector Extra Small */
+  .color-selector {
+    bottom: 10px;
+    padding: 8px 12px;
+    min-width: 180px;
+  }
+  
+  .color-selector h3 {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+  
+  .color-options {
+    gap: 6px;
+  }
+  
+  .color-option {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .benefit-title {
+    font-size: 1.25rem;
+  }
+  
+  .pricing-title {
+    font-size: 2rem;
+  }
+  
+  /* Content Spacing */
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .problem-section,
+  .benefits-section,
+  .testimonials-section,
+  .offer-section,
+  .guarantee-section,
+  .faq-section {
+    padding: 30px 0;
+  }
+  
+  /* Card Spacing */
+  .testimonial-card,
+  .pricing-card {
+    padding: 1.25rem 1rem;
+    margin: 0 0.5rem;
+  }
+  
+  .faq-item {
+    padding: 1rem;
+  }
+  
+  .benefit-content,
+  .problem-description,
+  .guarantee-description {
+    padding: 0 0.5rem;
   }
   
   .primary-button,
@@ -1198,31 +1335,87 @@ p, span, div,
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Layout Grids */
   .hero-grid,
   .problem-content,
   .benefit-item,
   .offer-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
   
+  /* Typography Mobile */
   .hero-title {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
   
   .hero-subtitle-main {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.3;
   }
   
   .section-title {
     font-size: 2rem;
+    line-height: 1.3;
   }
   
+  .benefit-title {
+    font-size: 1.5rem;
+  }
+  
+  .pricing-title {
+    font-size: 2.5rem;
+  }
+  
+  /* Content Containers */
+  .container {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+  
+  /* Section Spacing */
+  .problem-section,
+  .benefits-section,
+  .testimonials-section,
+  .offer-section,
+  .guarantee-section,
+  .faq-section {
+    padding: 40px 0;
+  }
+  
+  .problem-content,
+  .benefits-grid,
+  .testimonials-grid,
+  .offer-content,
+  .guarantee-content {
+    padding: 0 1rem;
+  }
+  
+  /* Reverse Layout Fix */
   .benefit-item.reverse {
     direction: ltr;
   }
   
+  /* FAQ Grid */
   .faq-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Testimonials Mobile */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+  
+  /* Offer Section Mobile */
+  .pricing-card {
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
   }
 }
