@@ -60,7 +60,7 @@ const initialState: ViewerState = {
   loadingText: 'Loading your Sangga...',
   
   // Model state
-  selectedColor: 'brown',
+  selectedColor: 'black',
   
   // Camera and controls
   cameraTarget: new THREE.Vector3(0, 0, 0),

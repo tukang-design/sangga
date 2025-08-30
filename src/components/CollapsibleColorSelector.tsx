@@ -10,10 +10,13 @@ const CollapsibleColorSelector: React.FC = () => {
   } = useViewerStore()
 
   const colorOptions = [
-    { name: 'Warm Brown', value: 'brown', hex: '#8b5a3c' },
-    { name: 'Earth Tan', value: 'tan', hex: '#8b6f47' },
-    { name: 'Dark Wood', value: 'darkwood', hex: '#5d4e37' },
-    { name: 'Natural Beige', value: 'beige', hex: '#a68b5b' },
+    { name: 'Black', value: 'black', hex: '#2c2c2c' },
+    { name: 'Olive Green', value: 'olive', hex: '#6b8e23' },
+    { name: 'Sage', value: 'sage', hex: '#9caf88' },
+    { name: 'Pink', value: 'pink', hex: '#ffc0cb' },
+    { name: 'Baby Blue', value: 'babyblue', hex: '#87ceeb' },
+    { name: 'Green', value: 'green', hex: '#4caf50' },
+    { name: 'Orange', value: 'orange', hex: '#ff7043' },
   ]
 
   const selectedColorData = colorOptions.find(color => color.value === selectedColor) || colorOptions[0]

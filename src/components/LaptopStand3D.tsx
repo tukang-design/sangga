@@ -15,20 +15,24 @@ const LaptopStand3D: React.FC = () => {
     }
   })
 
-  // Color mapping for pastel colors
-    const getColorFromSelection = (colorName: string): string => {
+  // Color mapping for new vibrant palette
+  const getColorFromSelection = (colorName: string): string => {
     const colorMap: Record<string, string> = {
+      // New color palette
+      black: '#2c2c2c',
+      'olive green': '#6b8e23',
+      sage: '#9caf88',
+      pink: '#ffc0cb',
+      'baby blue': '#87ceeb',
+      green: '#4caf50',
+      orange: '#ff7043',
+      // Fallback to old colors for backward compatibility
       brown: '#8b5a3c',
       tan: '#8b6f47', 
       darkwood: '#5d4e37',
-      beige: '#a68b5b',
-      // Fallback to old colors for backward compatibility
-      pink: '#fce7f3',
-      blue: '#dbeafe',
-      green: '#d1fae5',
-      peach: '#fed7aa',
+      beige: '#a68b5b'
     }
-    return colorMap[colorName] || '#8b5a3c'
+    return colorMap[colorName] || '#2c2c2c'
   }
 
   const materialColor = getColorFromSelection(selectedColor)
@@ -44,8 +48,8 @@ const LaptopStand3D: React.FC = () => {
       >
         <meshStandardMaterial
           color={materialColor}
-          metalness={0.1}
-          roughness={0.3}
+          metalness={0.0}
+          roughness={0.8}
         />
       </RoundedBox>
 
@@ -58,8 +62,8 @@ const LaptopStand3D: React.FC = () => {
       >
         <meshStandardMaterial
           color={materialColor}
-          metalness={0.1}
-          roughness={0.3}
+          metalness={0.0}
+          roughness={0.8}
         />
       </RoundedBox>
 
@@ -73,8 +77,8 @@ const LaptopStand3D: React.FC = () => {
       >
         <meshStandardMaterial
           color={materialColor}
-          metalness={0.1}
-          roughness={0.3}
+          metalness={0.0}
+          roughness={0.8}
         />
       </RoundedBox>
 
@@ -88,8 +92,8 @@ const LaptopStand3D: React.FC = () => {
       >
         <meshStandardMaterial
           color={materialColor}
-          metalness={0.1}
-          roughness={0.3}
+          metalness={0.0}
+          roughness={0.8}
         />
       </RoundedBox>
 
@@ -103,8 +107,8 @@ const LaptopStand3D: React.FC = () => {
       >
         <meshStandardMaterial
           color={materialColor}
-          metalness={0.1}
-          roughness={0.3}
+          metalness={0.0}
+          roughness={0.8}
         />
       </RoundedBox>
 
@@ -117,8 +121,8 @@ const LaptopStand3D: React.FC = () => {
       >
         <meshStandardMaterial
           color={materialColor}
-          metalness={0.1}
-          roughness={0.3}
+          metalness={0.0}
+          roughness={0.8}
         />
       </RoundedBox>
     </group>
