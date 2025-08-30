@@ -244,12 +244,6 @@ p, span, div,
   overflow-x: hidden;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
 .primary-button {
   background: linear-gradient(135deg, #8b5a3c 0%, #a0725b 100%);
   color: white;
