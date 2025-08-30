@@ -25,7 +25,7 @@ html, body, #root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #ffffff;
-  color: #2d3748;
+  color: #5d4e37;
   scroll-behavior: smooth;
 }
 
@@ -95,7 +95,7 @@ p, span, div,
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #8b5a3c;
   text-decoration: none;
 }
 
@@ -106,14 +106,14 @@ p, span, div,
 }
 
 .nav-menu a {
-  color: #4a5568;
+  color: #8b6f47;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .nav-menu a:hover {
-  color: #2d3748;
+  color: #8b5a3c;
 }
 
 .cta-button {
@@ -180,7 +180,7 @@ p, span, div,
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 0.5rem;
-  color: #1a202c;
+  color: #5d4e37;
   letter-spacing: -0.02em;
 }
 
@@ -189,12 +189,12 @@ p, span, div,
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 2rem;
-  color: #2d3748;
+  color: #8b5a3c;
 }
 
 .hero-description {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: #8b6f47;
   margin-bottom: 2.5rem;
   line-height: 1.6;
   max-width: 500px;
@@ -223,7 +223,7 @@ p, span, div,
 
 .cta-main:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+  box-shadow: 0 8px 25px rgba(139, 90, 60, 0.6);
 }
 
 .social-proof {
@@ -238,7 +238,7 @@ p, span, div,
 
 .social-text {
   font-size: 0.9rem;
-  color: #666;
+  color: #8b6f47;
   font-weight: 500;
 }
 
@@ -257,7 +257,7 @@ p, span, div,
 }
 
 .primary-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #8b5a3c 0%, #a0725b 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -272,13 +272,13 @@ p, span, div,
 
 .primary-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 12px 35px rgba(139, 90, 60, 0.4);
 }
 
 .secondary-button {
   background: transparent;
-  color: #4a5568;
-  border: 2px solid #e2e8f0;
+  color: #8b5a3c;
+  border: 2px solid #d4c4b0;
   padding: 1rem 2rem;
   border-radius: 12px;
   font-size: 1.1rem;
@@ -290,8 +290,8 @@ p, span, div,
 }
 
 .secondary-button:hover {
-  border-color: #cbd5e0;
-  background: #f7fafc;
+  border-color: #a0725b;
+  background: #faf7f2;
 }
 
 /* 3D Viewer Section */
@@ -332,7 +332,7 @@ p, span, div,
   margin: 0 0 12px 0;
   font-size: 14px;
   font-weight: 600;
-  color: #374151;
+  color: #5d4e37;
   text-align: center;
 }
 
@@ -374,7 +374,7 @@ p, span, div,
   transform: translateX(-50%);
   font-size: 10px;
   font-weight: 500;
-  color: #6b7280;
+  color: #8b6f47;
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -423,12 +423,12 @@ p, span, div,
 .control-icon {
   width: 24px;
   height: 24px;
-  color: #4a5568;
+  color: #8b5a3c;
 }
 
 .viewer-hint {
   font-size: 0.9rem;
-  color: #718096;
+  color: #8b6f47;
   font-weight: 500;
 }
 
@@ -444,7 +444,7 @@ p, span, div,
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1a202c;
+  color: #5d4e37;
 }
 
 .features-grid {
@@ -471,18 +471,18 @@ p, span, div,
   width: 48px;
   height: 48px;
   margin-bottom: 1rem;
-  color: #667eea;
+  color: #8b5a3c;
 }
 
 .feature-title {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #1a202c;
+  color: #5d4e37;
 }
 
 .feature-description {
-  color: #718096;
+  color: #8b6f47;
   line-height: 1.6;
 }
 
@@ -502,7 +502,7 @@ p, span, div,
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1a202c;
+  color: #5d4e37;
 }
 
 .audience-grid {
@@ -524,7 +524,7 @@ p, span, div,
 .audience-label {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2d3748;
+  color: #8b5a3c;
 }
 
 /* Loading Screen */
@@ -546,8 +546,8 @@ p, span, div,
 .loading-spinner {
   width: 40px;
   height: 40px;
-  border: 3px solid #e2e8f0;
-  border-top: 3px solid #667eea;
+  border: 3px solid #d4c4b0;
+  border-top: 3px solid #8b5a3c;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 1rem;
@@ -559,7 +559,7 @@ p, span, div,
 }
 
 .loading-text {
-  color: #4a5568;
+  color: #8b5a3c;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -831,7 +831,7 @@ p, span, div,
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: #1a202c;
+  color: #5d4e37;
 }
 
 .section-title.centered {
@@ -843,16 +843,16 @@ p, span, div,
 .guarantee-description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #4a5568;
+  color: #8b6f47;
 }
 
 .image-placeholder {
-  background: #e2e8f0;
+  background: #f5ede1;
   border-radius: 12px;
   padding: 60px 20px;
   text-align: center;
-  color: #718096;
-  border: 2px dashed #cbd5e0;
+  color: #8b6f47;
+  border: 2px dashed #d4c4b0;
   min-height: 200px;
   width: 100%;
   max-width: 100%;
@@ -906,19 +906,19 @@ p, span, div,
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #1a202c;
+  color: #5d4e37;
 }
 
 .benefit-description {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #4a5568;
+  color: #8b6f47;
 }
 
 /* Testimonials Section */
 .testimonials-section {
   padding: 80px 0;
-  background: #f7fafc;
+  background: #faf7f2;
 }
 
 .testimonials-grid {
@@ -938,19 +938,19 @@ p, span, div,
 .testimonial-text {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #2d3748;
+  color: #5d4e37;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
 
 .testimonial-author strong {
-  color: #1a202c;
+  color: #5d4e37;
   font-weight: 600;
 }
 
 .author-title {
   display: block;
-  color: #718096;
+  color: #8b6f47;
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
@@ -977,7 +977,7 @@ p, span, div,
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: #f7fafc;
+  color: #f5ede1;
 }
 
 .offer-features {
@@ -988,7 +988,7 @@ p, span, div,
 .offer-features li {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
-  color: #f7fafc;
+  color: #f5ede1;
 }
 
 .pricing {
@@ -999,7 +999,7 @@ p, span, div,
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #fed7d7;
+  color: #f5ede1;
 }
 
 .price-comparison {
@@ -1010,7 +1010,7 @@ p, span, div,
 
 .original-price {
   text-decoration: line-through;
-  color: #fed7d7;
+  color: #f5ede1;
   font-size: 1.1rem;
 }
 
@@ -1021,7 +1021,7 @@ p, span, div,
 }
 
 .savings {
-  color: #68d391;
+  color: #c4d9a4;
   font-weight: 600;
 }
 
@@ -1039,7 +1039,7 @@ p, span, div,
 
 .trust-text {
   font-size: 0.9rem;
-  color: #e2e8f0;
+  color: #f5ede1;
 }
 
 .payment-logos {
@@ -1052,7 +1052,7 @@ p, span, div,
   padding: 8px 12px;
   border-radius: 6px;
   font-size: 0.8rem;
-  color: #e2e8f0;
+  color: #f5ede1;
 }
 
 /* Guarantee Section */
@@ -1090,13 +1090,13 @@ p, span, div,
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #1a202c;
+  color: #5d4e37;
 }
 
 .faq-answer {
   font-size: 1rem;
   line-height: 1.6;
-  color: #4a5568;
+  color: #8b6f47;
 }
 
 /* Responsive Design */
@@ -1145,7 +1145,7 @@ p, span, div,
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1a202c;
+  color: #5d4e37;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -1162,13 +1162,13 @@ p, span, div,
 }
 
 .image-placeholder {
-  background: #e2e8f0;
+  background: #f5ede1;
   border-radius: 12px;
   padding: 60px 20px;
   text-align: center;
-  color: #718096;
+  color: #8b6f47;
   font-size: 0.9rem;
-  border: 2px dashed #cbd5e0;
+  border: 2px dashed #d4c4b0;
 }
 
 /* Benefits Section */
@@ -1201,13 +1201,13 @@ p, span, div,
 .benefit-title {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1a202c;
+  color: #5d4e37;
   margin-bottom: 1rem;
 }
 
 .benefit-description {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: #8b6f47;
   line-height: 1.6;
 }
 
@@ -1232,7 +1232,7 @@ p, span, div,
 
 .testimonial-text {
   font-size: 1.1rem;
-  color: #2d3748;
+  color: #5d4e37;
   line-height: 1.6;
   margin-bottom: 20px;
   font-style: italic;
@@ -1246,13 +1246,13 @@ p, span, div,
 
 .author-title {
   font-size: 0.9rem;
-  color: #718096;
+  color: #8b6f47;
 }
 
 /* Offer Section */
 .offer-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #8b5a3c 0%, #a0725b 100%);
   color: white;
 }
 
@@ -1360,7 +1360,7 @@ p, span, div,
 /* FAQ Section */
 .faq-section {
   padding: 80px 0;
-  background: #f7fafc;
+  background: #faf7f2;
 }
 
 .faq-grid {
@@ -1379,13 +1379,13 @@ p, span, div,
 .faq-question {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1a202c;
+  color: #5d4e37;
   margin-bottom: 1rem;
 }
 
 .faq-answer {
   font-size: 1rem;
-  color: #4a5568;
+  color: #8b6f47;
   line-height: 1.6;
 }
 
