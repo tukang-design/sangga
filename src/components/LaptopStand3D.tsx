@@ -16,20 +16,25 @@ const LaptopStand3D: React.FC = () => {
   })
 
   // Color mapping for pastel colors
-  const getColor = (color: string) => {
-    switch (color) {
-      case 'pink': return '#fce7f3'
-      case 'blue': return '#dbeafe' 
-      case 'green': return '#d1fae5'
-      case 'peach': return '#fed7aa'
-      default: return '#fce7f3'
+    const getColorFromSelection = (colorName: string): string => {
+    const colorMap: Record<string, string> = {
+      brown: '#8b5a3c',
+      tan: '#8b6f47', 
+      darkwood: '#5d4e37',
+      beige: '#a68b5b',
+      // Fallback to old colors for backward compatibility
+      pink: '#fce7f3',
+      blue: '#dbeafe',
+      green: '#d1fae5',
+      peach: '#fed7aa',
     }
+    return colorMap[colorName] || '#8b5a3c'
   }
 
-  const materialColor = getColor(selectedColor)
+  const materialColor = getColorFromSelection(selectedColor)
 
   return (
-    <group ref={meshRef} position={[0, -1, 0]}>
+    <group ref={meshRef} position={[0, -1.8, 0]} scale={2.2}>
       {/* Base of the laptop stand */}
       <RoundedBox
         args={[4, 0.3, 2.5]}
@@ -41,8 +46,6 @@ const LaptopStand3D: React.FC = () => {
           color={materialColor}
           metalness={0.1}
           roughness={0.3}
-          transparent={true}
-          opacity={0.9}
         />
       </RoundedBox>
 
@@ -57,8 +60,6 @@ const LaptopStand3D: React.FC = () => {
           color={materialColor}
           metalness={0.1}
           roughness={0.3}
-          transparent={true}
-          opacity={0.9}
         />
       </RoundedBox>
 
@@ -74,8 +75,6 @@ const LaptopStand3D: React.FC = () => {
           color={materialColor}
           metalness={0.1}
           roughness={0.3}
-          transparent={true}
-          opacity={0.9}
         />
       </RoundedBox>
 
@@ -91,8 +90,6 @@ const LaptopStand3D: React.FC = () => {
           color={materialColor}
           metalness={0.1}
           roughness={0.3}
-          transparent={true}
-          opacity={0.9}
         />
       </RoundedBox>
 
@@ -108,8 +105,6 @@ const LaptopStand3D: React.FC = () => {
           color={materialColor}
           metalness={0.1}
           roughness={0.3}
-          transparent={true}
-          opacity={0.9}
         />
       </RoundedBox>
 
@@ -124,8 +119,6 @@ const LaptopStand3D: React.FC = () => {
           color={materialColor}
           metalness={0.1}
           roughness={0.3}
-          transparent={true}
-          opacity={0.9}
         />
       </RoundedBox>
     </group>

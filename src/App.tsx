@@ -7,7 +7,8 @@ import { TestimonialsSection } from './components/TestimonialsSection'
 import { OfferSection } from './components/OfferSection'
 import { GuaranteeSection } from './components/GuaranteeSection'
 import { FAQSection } from './components/FAQSection'
-import ColorSelector from './components/ColorSelector'
+import { CreatorStorySection } from './components/CreatorStorySection'
+import CollapsibleColorSelector from './components/CollapsibleColorSelector'
 import Scene3D from './components/Scene3D'
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
             <div className="hero-right">
               <div className="product-viewer">
                 <Scene3D />
-                <ColorSelector />
+                <CollapsibleColorSelector />
               </div>
             </div>
           </div>
@@ -50,13 +51,16 @@ function App() {
         {/* Section 4: Testimonials */}
         <TestimonialsSection />
 
-        {/* Section 5: The Offer */}
+        {/* Section 5: Creator Story */}
+        <CreatorStorySection />
+
+        {/* Section 6: The Offer */}
         <OfferSection />
 
-        {/* Section 6: Guarantee */}
+        {/* Section 7: Guarantee */}
         <GuaranteeSection />
 
-        {/* Section 7: FAQ */}
+        {/* Section 8: FAQ */}
         <FAQSection />
       </main>
     </div>

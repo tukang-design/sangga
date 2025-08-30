@@ -20,7 +20,7 @@ const Scene3D: React.FC = () => {
       <Canvas
         camera={{
           position: [cameraPosition.x, cameraPosition.y, cameraPosition.z],
-          fov: 45,
+          fov: 75,
         }}
         shadows
         onPointerEnter={handleMouseEnter}
@@ -42,16 +42,6 @@ const Scene3D: React.FC = () => {
           
           {/* Main 3D model */}
           <LaptopStand3D />
-          
-          {/* Ground shadows */}
-          <ContactShadows
-            opacity={0.3}
-            scale={10}
-            blur={1}
-            far={10}
-            resolution={256}
-            color="#000000"
-          />
           
           {/* Controls */}
           {enableOrbitControls && (
